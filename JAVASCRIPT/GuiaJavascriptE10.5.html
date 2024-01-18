@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const invertirPalabrasEnFrase = frase => {
+            // Divide la frase en palabras
+            const palabras = frase.split(' ');
+
+            // Itera a través de las palabras y las invierte
+            const palabrasInvertidas = palabras.map(palabra => palabra.split('').reverse().join(''));
+
+            // Une las palabras invertidas en una frase nuevamente
+            const fraseInvertida = palabrasInvertidas.join(' ');
+
+            return fraseInvertida;
+        };
+
+        // Ejemplo de uso:
+        const fraseOriginal = "yo estoy estudiando js";
+        const fraseInvertida = invertirPalabrasEnFrase(fraseOriginal);
+        console.log("Frase original:", fraseOriginal);
+        console.log("Frase invertida:", fraseInvertida);
+    </script>
+</body>
+
+</html>

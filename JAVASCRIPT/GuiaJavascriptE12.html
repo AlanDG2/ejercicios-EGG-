@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var obtenerTipoDeDato = (valor) => {
+            return typeof valor;
+        };
+
+        var dato = prompt("ingrese un dato");
+        let number = 123;
+        let array = [1, 2, 3];
+        let obj={ nombre: "Juan", edad: 30 };
+        console.log(obtenerTipoDeDato(dato));
+        console.log(obtenerTipoDeDato(number));
+        console.log(obtenerTipoDeDato(array));
+        console.log(obtenerTipoDeDato(obj));
+
+    </script>
+</body>
+
+</html>

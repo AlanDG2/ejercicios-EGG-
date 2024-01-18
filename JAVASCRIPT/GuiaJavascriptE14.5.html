@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const libro = {
+            ISBN: "",
+            Titulo: "",
+            Autor: "",
+            NumeroDePaginas: 0,
+
+            // Método para cargar los datos del libro desde el usuario
+            cargarLibro: function () {
+                this.ISBN = prompt("Ingrese el ISBN del libro:");
+                this.Titulo = prompt("Ingrese el título del libro:");
+                this.Autor = prompt("Ingrese el autor del libro:");
+                this.NumeroDePaginas = parseInt(prompt("Ingrese el número de páginas del libro:"));
+            },
+
+            // Método para mostrar la información del libro
+            mostrarInformacion: function () {
+                console.log("ISBN:", this.ISBN);
+                console.log("Título:", this.Titulo);
+                console.log("Autor:", this.Autor);
+                console.log("Número de páginas:", this.NumeroDePaginas);
+            }
+        };
+
+        // Cargar los datos del libro desde el usuario
+        libro.cargarLibro();
+
+        // Mostrar la información del libro
+        console.log("Información del libro:");
+        libro.mostrarInformacion();
+
+    </script>
+</body>
+
+</html>

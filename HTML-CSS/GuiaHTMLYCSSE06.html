@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02 formulario</title>
+  </head>
+  <body>
+    <section id="main-section">
+      <div id="formulario" class="section">
+        <form
+          action="/controlador-registro"
+          method="POST"
+          class="form-registro"
+          id="form-registro"
+          enctype="multipart/form-data"
+        >
+          <div class="form-group">
+            <label for="Nombre">Nombre y Apellido*</label>
+            <br>
+            <input
+              type="text"
+              class="input input-text"
+              name="nombre"
+              required
+              placeholder="Pepito Honguito"
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Contraseña*</label>
+            <br>
+            <input
+              type="password"
+              class="input"
+              name="password"
+              required
+              placeholder="contraseña"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="edad">Edad del  usuario*</label>
+            <br>
+            <input
+              type="number"
+              class="input"
+              name="edad"
+              placeholder="18"
+            />
+          </div>
+          <div class="form-group">
+            <label for="fecha">Alguna fecha</label>
+            <br>
+            <input
+              type="date"
+              name="fecha-inicio"
+              min="2015-01-01"
+              max="2020-06-20"
+                />
+          </div>
+          <div class="form-group">
+             <p>Sexo del usuario</p>
+            <label class = opcion for="radio-input">Hombre</label>
+            <input  type="radio"  name = "opcion" />
+            <label class = opcion for="radio-input">Mujer</label>
+            <input  type="radio" name = "opcion"  /> 
+            <label  class = opcion for="radio-input">Prefiero  no decir</label>
+            <input  type="radio" name = "opcion" />
+          </div>
+          <div class="form-group">
+            <label for="pais">País</label>
+            <select name="pais" id="pais" class="input">
+              <option value="arg">ARG</option>
+              <option value="chi">CHI</option>
+              <option value="brz">BRZ</option>
+            </select>
+          </div>
+          <button type="submit" class="link btn">enviar</button>
+          <button type="submit" class="link btn">borrar</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

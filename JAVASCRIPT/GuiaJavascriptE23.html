@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="miParrafo">
+        Este es un ejemplo de párrafo con algunas palabras largas como "extraordinario" y "fantástico".
+    </p>
+    
+    <script>
+        // Obtener el párrafo por su ID
+        const parrafo = document.getElementById('miParrafo');
+
+        // Obtener el contenido del párrafo
+        const contenidoParrafo = parrafo.textContent;
+
+        // Dividir el contenido en palabras
+        const palabras = contenidoParrafo.split(/\s+/);
+
+        // Recorrer las palabras y resaltar las largas
+        for (let i = 0; i < palabras.length; i++) {
+            const palabra = palabras[i];
+            if (palabra.length > 8) {
+                // Crear un elemento span para resaltar la palabra
+                const span = document.createElement('span');
+                span.textContent = palabra + ' '; // Agregar un espacio al final de cada palabra
+                span.classList.add('highlight'); // Agregar la clase CSS para resaltar
+                parrafo.appendChild(span);
+            } else {
+                // Si la palabra no es larga, simplemente agregarla al párrafo
+                parrafo.appendChild(document.createTextNode(palabra + ' '));
+            }
+        }
+    </script>
+</body>
+
+</html>

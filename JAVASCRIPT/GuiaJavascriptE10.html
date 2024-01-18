@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let frase = prompt("Ingrese una frase:");
+        let resultado = "";
+
+        let invertirPalabra = palabra => {
+            return palabra.split('').reverse().join('');
+        };
+
+        // Ejemplo de uso:
+        
+        const palabraInvertida = invertirPalabra(frase);
+        console.log("frase original:", frase);
+        console.log("frase invertida:", palabraInvertida);
+
+
+    </script>
+</body>
+
+</html>

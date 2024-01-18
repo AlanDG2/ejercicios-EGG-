@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Definir un objeto Círculo
+        const circulo = {
+            radio: 0,
+
+            // Método para establecer el radio del círculo
+            setRadio: function (nuevoRadio) {
+                this.radio = nuevoRadio;
+            },
+
+            // Método para calcular el área del círculo
+            calcularArea: function () {
+                return Math.PI * Math.pow(this.radio, 2);
+            },
+
+            // Método para calcular el perímetro (circunferencia) del círculo
+            calcularPerimetro: function () {
+                return 2 * Math.PI * this.radio;
+            }
+        };
+
+        // Pedir al usuario que ingrese el radio del círculo
+        const radioUsuario = parseFloat(prompt("Ingrese el radio del círculo:"));
+
+        // Establecer el radio del círculo
+        circulo.setRadio(radioUsuario);
+
+        // Calcular el área y el perímetro del círculo
+        const area = circulo.calcularArea();
+        const perimetro = circulo.calcularPerimetro();
+
+        // Mostrar los resultados
+        console.log("Área del círculo:", area.toFixed(2));
+        console.log("Perímetro del círculo:", perimetro.toFixed(2));
+    </script>
+</body>
+
+</html>

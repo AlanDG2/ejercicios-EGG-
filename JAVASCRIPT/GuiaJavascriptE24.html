@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Calculadora de Radio de Círculo</h1>
+    <form id="formulario">
+        <label for="diametro">Ingresa el diámetro del círculo:</label>
+        <input type="number" id="diametro" name="diametro" required>
+        <button type="submit">Calcular Radio</button>
+    </form>
+    <p>El radio del círculo es: <span id="resultado"></span></p>
+
+    <script>
+        // Obtener el formulario y los elementos de entrada
+        const formulario = document.getElementById('formulario');
+        const inputDiametro = document.getElementById('diametro');
+        const resultado = document.getElementById('resultado');
+
+        // Agregar un evento de envío de formulario
+        formulario.addEventListener('submit', function (e) {
+            e.preventDefault(); // Evitar que se envíe el formulario
+
+            // Obtener el valor del diámetro desde el formulario
+            const diametro = parseFloat(inputDiametro.value);
+
+            // Calcular el radio del círculo
+            const radio = diametro / 2;
+
+            // Mostrar el resultado en el HTML
+            resultado.textContent = radio.toFixed(2); // Limitar a 2 decimales
+        });
+    </script>
+</body>
+
+</html>

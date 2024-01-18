@@ -1,0 +1,105 @@
+
+
+.table{
+    border-collapse: collapse; /* Combina los bordes de las celdas adyacentes */
+    width: 100%;
+    border: 1px solid black;    
+   
+}
+.prueba{
+    border: 1px solid black;
+    padding: 8px; /* Espaciado interno de las celdas */
+}
+.table-warning{
+    border: 1px solid black; /* Grosor y color del borde */
+    padding: 8px; /* Espaciado interno de las celdas */
+}   
+.table-primary{
+    border: 1px solid black; /* Grosor y color del borde */
+    padding: 8px; /* Espaciado interno de las celdas */
+}
+
+
+.columna{
+background-color: #258ae7;
+}
+
+
+.fila{
+    background-color: #d44d18;
+}
+
+.titulo{
+
+        margin: 0px;
+   
+}
+
+#body{
+    display: flex;
+    background-color: #324ce2;
+    border: 1px solid black;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+
+
+#caja{
+    margin-left: 2px;
+    background-color: rgb(245, 245, 245);
+    margin-right: 2px;
+    margin-bottom: 2px;
+}
+    
+
+#tabla{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 110px;
+    margin-bottom: 100px;
+
+}
+.menu{
+    background-color: rgb(187, 185, 185);
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+    justify-content: space-between;
+    margin-right: 5px;
+}
+
+#encabezado{
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton-con-imagen {
+    background-image: url(botonesventana\ \(2\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    padding: 0;
+    width: 70px;
+    text-indent: -9999px;
+ 
+  }
+
+  #cerrar{
+    display: inline-block;
+  }

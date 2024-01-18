@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let frase = prompt("Ingrese una frase:");
+        let resultado = "";
+
+        for (let i = 0; i < frase.length; i++) {
+            resultado += frase[i] + " ";
+        }
+
+        console.log(resultado);
+        resultado = "";
+
+        const letras = frase.split(""); // Divide la frase en un arreglo de letras
+        resultado = letras.join(" "); // Une las letras con espacios
+
+        console.log(resultado);
+
+        resultado = "";
+
+        for (let i = 0; i < frase.length; i++) {
+            resultado += frase.substring(i, i + 1) + " ";
+        }
+
+        console.log(resultado);
+
+
+    </script>
+</body>
+
+</html>

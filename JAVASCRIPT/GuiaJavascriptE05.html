@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let num1 = parseInt(prompt("Ingrese el primer número"));
+        let num2 = parseInt(prompt("Ingrese el segundo número"));
+        let operaciones;
+
+        switch (operacion) {
+            case ("S", "s"):
+                operaciones = num1 + num2;
+                break;
+            case ("R", "r"):
+                operaciones = num1 - num2;
+                break;
+            case ("M", "m"):
+                operaciones = num1 * num2;
+                break;
+            case ("D", "d"):
+                operaciones = num1 / num2;
+                break;
+            default:
+                console.log("No se reconoce la operación a realizar");
+        }
+
+        alert(`La operación da: ${operaciones}`);
+
+    </script>
+</body>
+
+</html>

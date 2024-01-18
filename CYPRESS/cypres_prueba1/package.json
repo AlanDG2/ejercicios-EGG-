@@ -1,0 +1,27 @@
+{
+  "name": "cypres_prueba1",
+  "version": "1.0.0",
+  "description": "E2E Framework Testing Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "cypress:open": "cypress open",
+    "dev": "node server.js",
+    "cypress:runDefault": "cypress run --spec cypress\\e2e\\practicas\\hooks.cy.js",
+    "cypress:runChrome": "cypress run --browser chrome cypress\\e2e\\practicas\\hooks.cy.js",
+    "cypress:runChromeHeadless": "cypress run --headless cypress\\e2e\\practicas\\hooks.cy.js"
+
+
+  },
+  "keywords": [
+    "e2e",
+    "automation",
+    "framework",
+    "cypress"
+  ],
+  "author": "alan gonzalez",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.0"
+  }
+}

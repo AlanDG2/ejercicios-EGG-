@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function generarNumeroAleatorio(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        const vector1 = [];
+        const vector2 = [];
+
+        for (let i = 0; i < 5; i++) {
+            const valorAleatorio = generarNumeroAleatorio(1, 100); // Cambia el rango según tus necesidades
+            vector1.push(valorAleatorio);
+            vector2.push(valorAleatorio);
+
+        }
+
+
+        console.log("Vector 1:", vector1);
+        console.log("Vector 2:", vector2);
+    </script>
+</body>
+
+</html>
